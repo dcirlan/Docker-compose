@@ -1,0 +1,11 @@
+services:
+    client:
+        image: dcirlan/client
+        ports:
+            - 8080:5000
+    server:
+        image: dcirlan/express-docker
+        ports:
+            - 5050:5000
+    mongodb:
+        image: mongo
